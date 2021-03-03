@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.9550" tests="13" failures="8">
+  <testsuite name="Root Suite" timestamp="2021-03-03T03:54:43" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="blog_posts_api_medium" timestamp="2021-03-03T03:54:43" tests="13" file="C:\Users\andre.a.almeida\Documents\playground\hackerrank\blog-posts-api\test\index.spec.js" time="0.9550" failures="8">
+    <testcase name="blog_posts_api_medium should create a published post" time="0.0620" classname="should create a published post">
+    </testcase>
+    <testcase name="blog_posts_api_medium should create an unpublished post" time="0.0080" classname="should create an unpublished post">
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all the posts" time="0.1040" classname="should fetch all the posts">
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all the posts if the isPublished filter value does not exist" time="0.0940" classname="should fetch all the posts if the isPublished filter value does not exist">
+      <failure message="expected [] to deeply equal [ Array(4) ]" type="AssertionError"><![CDATA[AssertionError: expected [] to deeply equal [ Array(4) ]
+    at Context.it (test\index.spec.js:104:39)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all posts for an author" time="0.1040" classname="should fetch all posts for an author">
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch no posts if author filter value does not exist" time="0.0980" classname="should fetch no posts if author filter value does not exist">
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all published posts for an author" time="0.1140" classname="should fetch all published posts for an author">
+      <failure message="expected [] to deeply equal [ Array(1) ]" type="AssertionError"><![CDATA[AssertionError: expected [] to deeply equal [ Array(1) ]
+    at Context.it (test\index.spec.js:125:39)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch all unpublished posts for an author" time="0.1590" classname="should fetch all unpublished posts for an author">
+      <failure message="expected [] to deeply equal [ Array(1) ]" type="AssertionError"><![CDATA[AssertionError: expected [] to deeply equal [ Array(1) ]
+    at Context.it (test\index.spec.js:132:39)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should fetch a single post" time="0.0340" classname="should fetch a single post">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
+    at Context.it (test\index.spec.js:138:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should get 404 if the post ID does not exist" time="0.0180" classname="should get 404 if the post ID does not exist">
+      <failure message="expected &apos;&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;en&quot;&gt;\n&lt;head&gt;\n&lt;meta charset=&quot;utf-8&quot;&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;pre&gt;Cannot GET /posts/32323&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&apos; to deeply equal &apos;ID not found&apos;" type="AssertionError"><![CDATA[AssertionError: expected '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /posts/32323</pre>\n</body>\n</html>\n' to deeply equal 'ID not found'
+    at Context.it (test\index.spec.js:145:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should get 405 for a put request to /posts/:id" time="0.0620" classname="should get 405 for a put request to /posts/:id">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
+    at Context.it (test\index.spec.js:151:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should get 405 for a patch request to /posts/:id" time="0.0510" classname="should get 405 for a patch request to /posts/:id">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
+    at Context.it (test\index.spec.js:157:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]></failure>
+    </testcase>
+    <testcase name="blog_posts_api_medium should get 405 for a delete request to /posts/:id" time="0.0470" classname="should get 405 for a delete request to /posts/:id">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
+    at Context.it (test\index.spec.js:163:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
