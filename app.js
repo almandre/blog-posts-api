@@ -5,6 +5,7 @@ const logger = require('morgan');
 require('./connection')
 const indexRouter = require('./routes/index');
 const postsRouter = require('./routes/posts');
+const { blockUpdates } = require('./middleware');
 
 const app = express();
 
@@ -17,7 +18,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/posts', postsRouter);
+app.use('/posts', blockUpdates, postsRouter);
 app.use('/', indexRouter);
 
 module.exports = app;
